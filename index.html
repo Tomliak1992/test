@@ -4,58 +4,183 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BarberShop</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
     <body>
-        <header>
-            <nav>
-                <img src="image/logo.png" alt="Logo">
+        <header class="header">
+            <nav class="navbar">
+                <img src="image/logo.png" alt="Logo" class="header-logo">
                 <ul>
-                    <li><a href=""></a>О нас</li>
-                    <li><a href=""></a>Услуги и цены</li>
-                    <li><a href=""></a>Мастера</li>
-                    <li><a href=""></a>Контакты</li>
+                    <li><a href="#about-section" class="nav-link"></a>О нас</li>
+                    <li><a href="#price-section" class="nav-link"></a>Услуги и цены</li>
+                    <li><a href="#masters-section" class="nav-link"></a>Мастера</li>
+                    <li><a href="#" class="nav-link"></a>Контакты</li>
                 </ul>   
                 <div>
-                    <a href="tel:+380441111111">+38 044 111 11 11</a>
-                    <a href="">онлайн-запись</a>
+                    <a href="tel:+380441111111" class="phone-link">+38 044 111 11 11</a>
+                    <a href="#footer" class="primary-btn">онлайн-запись</a>
                 </div>
             </nav>
-            <aside>
-                <div><a href="">Instagram</a></div>
-                <div><a href=""></a>Facebook</div>
+            <aside class="sidebar">
+                <div class="social-box">
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">Facebook</a>
+                </div>
             </aside>
             <div class="slaider">
                 <div class="slaid">
-                    <span></span>
-                    <h1></h1>
-                    <p></p>
+                    <span lang="en" class="section-title-text">A hair salon for men in Kyiv</span>
+                    <h1 class="hero-title">BarberShop</h1>
+                    <p class="hero-description">Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p>
                 </div>
                 <div class="slaid">
-                    <span></span>
-                    <h1></h1>
-                    <p></p>
+                    <span lang="en" class="section-title-text">A hair salon for men in Kyiv</span>
+                    <h1 class="hero-title">BarberShop</h1>
+                    <p class="hero-description">Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p>
                 </div>
                 <div class="slaid">
-                    <span></span>
-                    <h1></h1>
-                    <p></p>
+                    <span lang="en" class="section-title-text">A hair salon for men in Kyiv</span>
+                    <h1 class="hero-title">BarberShop</h1>
+                    <p class="hero-description">Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p>
                 </div>
         </header>
-        <main>
-            <section>
-                <div>
-                    <img src="" alt="">
-                    <img src="" alt="">
+        <main class="layout">
+            <section class="adout" id="about-section">
+                <div class="about-image-box">
+                    <img src="image/img2.png" alt="намазать пеной" width="270" height="445">
+                    <img src="image/img4.jpg" alt="а потом вот так опасной бритвой" width="270" height="445">
                 </div>
-                <div>
-                    <span></span>
-                    <h4></h4>
-                    <h3></h3>
-                    <p></p>
-                    <a href=""></a>
+                <div class="description-conteiner">
+                    <span class="suptitle-primary">О НАС</span>
+                    <h2 class="section-title">Лучший Барбершоп твоего города</h2>
+                    <h3 class="sectiom-subtitle">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</h3>
+                    <p class="section-deckription">Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
+                    <a href="#" class="primary-btn darken">онлайн-запись</a>
                 </div>
             </section>
+            <section class="section" id="price-section">
+                <span class="suptitle-primary">Проведи время в компании лучших мастеров</span>
+                <h2 class="section-title lighten">Услуги и цены</h2>
+                <dive class="price-box">
+                    <ul class="price-list">
+                        <li class="price-text">
+                            <p>Мужская стрижка</p>
+                            <span>от 300 грн.</span>
+                        </li>
+                        <li class="price-text">Стрижка бороды
+                            <p></p>
+                            <span></span>
+                        </li>
+                        <li class="price-text">Стрижка усов
+                            <p></p>
+                            <span></span>
+                        </li>
+                        <li class="price-text">Бритье опасной бритвой
+                            <p></p>
+                            <span></span>
+                        </li>
+                    </ul>
+                    <ul class="price-list">
+                        <li class="price-text">Cтрижка у стажера
+                            <p></p>
+                            <span></span>
+                        </li>
+                        <li class="price-text">Стрижка под насадку
+                            <p></p>
+                            <span></span>
+                        </li>
+                        <li class="price-text">Детская стрижка (до 12 лет)
+                            <p></p>
+                            <span></span>
+                        </li>
+                        <li class="price-text">Камуфлирование седины
+                            <p></p>
+                            <span></span>
+                        </li>
+                    </ul>
+                    <a href="#footer" class="primary-btn">онлайн-запись</a>
+                </dive>
+            </section>
+            <section class="section" id="why-section">
+                <div class="number-conteiner"></div>
+                <div class="number-box">
+                    <P>600</P>
+                    <span>Довольных клиентов в день</span>
+                </div>
+                <div class="number-box">
+                    <p>50</p>
+                    <span>Наград за отличный сервис </span>
+                </div>
+                <div class="number-box">
+                    <p>20</p>
+                    <span>Лучших мастеров Киева </span>
+                </div>
+                <div class="number-box">
+                    <p>100</p>
+                    <span>Подарков постоянным клиентам</span>
+                </div>
+                <div class="description-conteiner">
+                    <span class="suptitle-primary">старая традиционная школа</span>
+                     <h2 class="section-title">Почему приходят именно к нам?</h2>
+                     <h3 class="sectiom-subtitle">О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать. </h3>
+            </section>
+
+            <section class="section">
+                <span class="suptitle-primary">для настоящих ценителей атмосферы</span>
+                <h2 class="section-title">Наши мастера</h2>
+                <ul class="master-list">
+                    <li class="master-card">
+                        <img>
+                        <h4>John Smith</h4>
+                        <p>Extreme Barber</p>
+                        <div class="master-social">
+                            <ul class="master-social-link">
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                            </ul>    
+                    </li>
+                </ul>
+                <ul class="master-list">
+                    <li class="master-card">
+                        <img>
+                        <h4>John Smith</h4>
+                        <p>Extreme Barber</p>
+                        <div class="master-social">
+                            <ul class="master-social-link">
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                            </ul>    
+                    </li>
+                </ul>
+                <ul class="master-list">
+                    <li class="master-card">
+                        <img>
+                        <h4>John Smith</h4>
+                        <p>Extreme Barber</p>
+                        <div class="master-social">
+                            <ul class="master-social-link">
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                            </ul>    
+                    </li>
+                </ul>    
+            </section>
+            <section class="section" id="">
+                <span class="suptitle-primary"></span>
+                <div class="img-gallery">
+                    <img src="" alt="">
+                </div>
+                
+            </section>     
         </main>
+        <footer>
+        </footer>
     </body>
 </html>
