@@ -7,6 +7,11 @@
 
 body {
     font-family: "Open Sans", sans-serif;
+    letter-spacing: 0.02em;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    list-style: none;
 }
 
 .section-title {
@@ -18,4 +23,39 @@ body {
 h2.section-title.lighten {
     color: #fff;
 
+}
+.section-subtitle {
+font-size: 18px;
+line-height: 1,67;
+color: #555);
+}
+.section-deckription {
+font-size: 14px;
+line-height: 1,86;
+color: #555;
+}
+.suptitle-primary {
+font-weight: 600;
+font-size: 11px;
+line-height: 1,36;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: #303030;
+}
+.primary-btn {
+font-weight: 600;
+font-size: 12px;
+line-height: 1,33;
+letter-spacing: 0.09em;
+text-transform: uppercase;
+color: #303030;
+}
+.price-text {
+font-size: 18px;
+line-height: 1,67;
+letter-spacing: 0.02em;
+color: #9DA4BD;
+}
+.header {
+    display: flex;
 }
