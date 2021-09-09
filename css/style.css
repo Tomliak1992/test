@@ -60,3 +60,61 @@ color: #9DA4BD;
     display: flex;
 }
 /* test form */
+
+
+/* командний */
+.section__title--visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: 1px;
+}
+.gallery-backgraund {
+    max-width: 1600px;
+    height: 430px;
+    background: linear-gradient(
+        to top,
+        rgba(255, 255, 255, 1) 60%,
+        rgba(255, 245, 246, 1) 40%
+    );
+    background-image: url('../image/home-pic.jpg');
+      
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url('../image/home-pic2x.jpg');
+    }
+    @media screen and (min-width: 768px) {
+        background-image: url('../image/home-pic.jpg');
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ),
+        url('../image/home-pic2x');
+      }
+    }
+    /* @media screen and (max-width: 1280px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    } */
+    @media screen and (min-width: 1280px) {
+    /* padding-bottom: 200px;
+    padding-top: 200px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto; */
+    background-image: url('../image/home-pic2x.png');
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url('../image/home-pic.npg.png');
+      }
+    }
+
+}
