@@ -100,8 +100,35 @@ color: #9DA4BD;
 
 /* test */
 
-.grid-container {
-    @media only screen and (max-width: 480px) {
+.masonry {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: masonry;
+}
+.masonry__item {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    border: 1px solid #191C26;
+}   
+    
+.masonry__item > .masonry__images {
+    grid-row: 1 / -1;
+    grid-column: 1;
+}
+.masonry__images {
+border: 1px solid #FF6C00;
+}
+
+.landscape {
+    grid-column-start: span 2;
+  }
+
+/* .positioned5 {
+    grid-column: box-start / box-end;
+    border: 5px solid white;
+  } */
+    /* @media only screen and (max-width: 480px) {
         column-count: 1;
     }
     @media only screen and (min-width: 481px) and (max-width: 620px) {
@@ -114,14 +141,14 @@ color: #9DA4BD;
         column-count: 4;
     }
     column-gap: 16px;
-    margin: 8px 16px;
+    margin: 8px 16px; */
     
-    .item {
+    /* .item {
         background-color: $grey-middle;
         margin: 8px 0;
         padding: 21px;
         display: inline-block;
-    }
-}
+    } */
 
 
+/* слайд */
