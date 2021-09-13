@@ -1,4 +1,4 @@
-:root{
+/* :root{
     --primary-color: #FF6C00;
     --secondary-color: #191C26;
     --text-primary: #303030;
@@ -100,7 +100,7 @@ color: #9DA4BD;
 
 /* test */
 
-.masonry {
+/* .masonry {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: masonry;
@@ -122,7 +122,7 @@ border: 1px solid #FF6C00;
 
 .landscape {
     grid-column-start: span 2;
-  }
+  } */
 
 /* .positioned5 {
     grid-column: box-start / box-end;
@@ -153,10 +153,15 @@ border: 1px solid #FF6C00;
 
 /* слайд */
 
+h2, p, img {
+    margin: 0;
+    padding: 0;
+}
+
 .wrapper {
     margin-top: 800px;
-	height: 350px;
-    width: 926px;
+	height: 600px;
+    width: 280px;
 	margin-left: auto;
     margin-right: auto;
 	position: relative;
@@ -181,9 +186,10 @@ border: 1px solid #FF6C00;
 }
 
 .slides {
-	height: inherit;
+	/* height: inherit;
 	position: absolute;
-	width: inherit;
+	width: inherit; */
+    text-align: center;
 }
 
 .slide1 { 
@@ -242,9 +248,6 @@ border: 1px solid #FF6C00;
 	-moz-transform: scale(1.5);
 	-o-transform: scale(1.5);
 	transform: scale(1.5);
-	/* -webkit-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
-	-moz-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
-	-o-transition: transform ease-in-out .5s, opacity ease-in-out .5s; */
 	transition: transform ease-in-out .5s, opacity ease-in-out .5s;
 }
 
@@ -253,16 +256,62 @@ border: 1px solid #FF6C00;
 #slide3:checked ~ .slider > .slide3 {
 	opacity: 1;
 	z-index: 1;
-	/* -webkit-transform: scale(1);
-	-moz-transform: scale(1);
-	-o-transform: scale(1); */
 	transform: scale(1);
 }
 
 .slides__img {
-    position: absolute;
+    /* position: absolute;
     top: 0;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%) scale(1);
+    transform: translateX(-50%) scale(1); */
+}
+
+.slides__icon {
+    display: block;
+    fill: #191C26;
+    position: absolute;
+    top: 28px;
+    left: 61px;
+}
+
+.slides__text {
+padding: 43px 66px 26px 57px;
+font-family: DM Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 2.5;
+text-align: center;
+color: #000000;
+}
+
+.slides__content {
+    position: relative;
+    border: 1px solid #000000
+}
+
+.slides__text::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 32px;
+    height: 4px;
+    background-image: url(../image/mansonry/Group.svg);
+    background-size: cover;
+}
+
+.slides__name {
+    margin-top: 18px;
+    margin-bottom: 30px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    color: #000000;
+
 }
